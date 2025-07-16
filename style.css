@@ -87,7 +87,6 @@ header #hero > p {
 main {
   background-color: var(--background-color);
   border: var(--background-color) solid 1px;
-
 }
 
 /*Main -> Section*/
@@ -138,12 +137,13 @@ main > section {
   margin-bottom: 10px;
 }
 
-#SobreMi p{
-  display: flex; 
+#SobreMi p {
+  display: flex;
   text-align: justify;
 }
 
 #SobreMi > img {
+  object-fit: cover;
   width: 300px;
   margin-right: 5%;
   margin-left: 5%;
