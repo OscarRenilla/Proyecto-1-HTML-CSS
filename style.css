@@ -86,6 +86,8 @@ header #hero > p {
 /*Main*/
 main {
   background-color: var(--background-color);
+  border: var(--background-color) solid 1px;
+
 }
 
 /*Main -> Section*/
