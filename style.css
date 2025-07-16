@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background-color: #f0f0f0;
+  --principal-color: black;
+  --secundary-color: white;
+  --terciary-color: yellow;
+  --principal-text: "Roboto", sans-serif;
+  --widht-text: 200px;
+  --distance: 10px;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header > nav {
+  background-color: var(--principal-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--distance);
+}
+
+header > nav > #logo {
+  height: 60px;
+  width: auto;
+}
+
+header > nav > ul {
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+header a {
+  font-family: var(--principal-text);
+  color: var(--secundary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header > nav > #icons {
+  height: 30px;
+  width: auto;
+}
+
+/*Hero*/
+header > #hero {
+  min-height: 85vh;
+  background-image: url(./assests/Fondo.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--secundary-color);
+}
+
+header #hero > h1 {
+  font-family: var(--principal-text);
+  color: var(--secundary-color);
+  font-weight: bolder;
+  font-size: xxx-large;
+  margin: var(--distance);
+  margin-bottom: 50px;
+}
+
+ header #hero > p {
+  font-family: var(--principal-text);
+  color: var(--principal-color);
+  font-weight: bold;
+  font-size: larger;
+  background-color: var(--terciary-color);
+  padding: var(--distance);
+  border-radius: var(--distance);
+}
+
+/*Main*/
+main {
+  background-color: var(--background-color);
+}
+
+/*Main -> Section*/ 
+main > section {
+  margin-left: 10px;
+}
+
+.FondoAmarillo {
+  width: 200px;
+  height: 40px;
+  margin-top: var(--distance);
+  background-color: var(--terciary-color);
+}
+
+.text {
+  background-color: var(--principal-color);
+  color: var(--secundary-color);
+  width: var(--widht-text);
+  padding: 10px;
+  display: flex;
+  font-weight: bolder;
+  font-size: x-large;
+  justify-content: center;
+  position: relative;
+  left: 30px;
+  top: -20px;
+}
+
+/*Sobre mi*/
+#SobreMi {
+  display: flex;
+  justify-content: center;
+  padding: var(--distance);
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+#SobreMi div {
+  font-family: var(--principal-text);
+  width: 400px;
+}
+
+#SobreMi h3{
+    font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+#SobreMi > img {
+  width: 300px;
+  margin-right: 5%;
+}
+
+/*Proyectos*/
+#Proyectos {
+  padding-bottom: 30px;
+}
+
+#Proyectos > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--distance);
+}
+
+#Proyectos article {
+  border: var(--principal-color) solid 2px;
+  border-radius: var(--distance);
+}
+
+#Proyectos img {
+  width: 100%;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#Proyectos article div {
+  font-family: var(--principal-text);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--distance);
+}
+
+#Proyectos h4{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#Proyectos a {
+  color: var(--principal-color);
+  font-weight: bold;
+}
+
+/*Contacto*/
+#Contacto {
+  margin-bottom: 30px;
+}
+
+#Contacto > div {
+  max-width: auto;
+  padding: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#Contacto input {
+  border: var(--principal-color) solid 2px;
+  font-weight: bold;
+  font-family: var(--principal-text);
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  color: var(--principal-color);
+}
+
+#Contacto ::placeholder {
+  color: var(--principal-color);
+}
+
+#enviar {
+  background-color: #c2ffba;
+
+}
+
+/*Footer*/
+footer {
+  background-color: var(--principal-color);
+  font-family: var(--principal-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: var(--secundary-color);
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+}
+
+footer button {
+  background-color: var(--principal-color);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer img {
+  height: 30px;
+  width: 30px;
+}
+
+/*Reglas*/
+@media (max-width: 500px) {
+  #navlinks {
+    display: none;
+  }
+}
